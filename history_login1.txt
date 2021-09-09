@@ -1,0 +1,20 @@
+SERVER: Пользователь nike2 зашел в чат
+[You] nike1: 123
+nike2: 456
+[You] nike1: 789
+nike2: 012
+SERVER: Пользователь nike2 зашел в чат
+SERVER: Пользователь nike3 зашел в чат
+[You] nike1: 123
+nike2: 456
+nike3: 789
+[You] nike1: 123
+nike2: 456
+nike3: 789
+SERVER: Пользователь nike2 зашел в чат
+SERVER: Пользователь nike3 зашел в чат
+SERVER: Пользователь nike2 зашел в чат
+SERVER: Пользователь nike2 зашел в чат
+[You] nike1: qaz
+nike2: zaq
+SERVER: Пользователь nike2 зашел в чат
