@@ -18,3 +18,12 @@ SERVER: Пользователь nike2 зашел в чат
 [You] nike1: qaz
 nike2: zaq
 SERVER: Пользователь nike2 зашел в чат
+SERVER: Пользователь nike2 зашел в чат
+SERVER: Пользователь nike3 зашел в чат
+[You] nike1: 12
+nike2: 23
+nike3: 34
+клиенту nike2: 56
+SERVER: Пользователь nike4 зашел в чат
+SERVER: Пользователь nike4 зашел в чат
+SERVER: Пользователь nike3 зашел в чат

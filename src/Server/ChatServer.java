@@ -5,13 +5,17 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class ChatServer {
 
     private final List<ClientHandler> clients;
+    private final ExecutorService executor;
 
     public ChatServer() {
         clients = new ArrayList<>();
+        executor = Executors.newCachedThreadPool();
 
         try (ServerSocket serverSocket = new ServerSocket(8189)) {
             System.out.println("СЕРВЕР: Сервер запущен...");
@@ -31,6 +35,10 @@ public class ChatServer {
             sb.append(client.getName()).append(" ");
         }
         broadcast(sb.toString());
+    }
+
+    public ExecutorService getExecutor() {
+        return executor;
     }
 
     public void broadcast(String msg) {

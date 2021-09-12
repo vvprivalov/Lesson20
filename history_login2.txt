@@ -12,3 +12,8 @@ nike3: 789
 SERVER: Пользователь nike3 зашел в чат
 nike1: qaz
 [You] nike2: zaq
+SERVER: Пользователь nike3 зашел в чат
+nike1: 12
+[You] nike2: 23
+nike3: 34
+от nike1: 56
