@@ -21,14 +21,15 @@ public class ClientHandler {
             this.server = server;
             this.in = new DataInputStream(socket.getInputStream());
             this.out = new DataOutputStream(socket.getOutputStream());
-            new Thread(() -> {
+
+            server.getExecutor().execute(() -> {
                 try {
                     authenticate();
                     readMessages();
                 } finally {
                     closeConnection();
                 }
-            }).start();
+            });
         } catch (IOException e) {
             throw new RuntimeException("Не могу создать обработчик для клиента", e);
         }

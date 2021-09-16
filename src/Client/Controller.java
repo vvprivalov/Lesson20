@@ -51,7 +51,6 @@ public class Controller implements Initializable {
             this.out = new DataOutputStream(socket.getOutputStream());
             setAuth(false);
 
-
             new Thread(() -> {
                 try {
                     while (true) { // Ждем сообщения об успешной авторизации ("/authok")
@@ -96,6 +95,7 @@ public class Controller implements Initializable {
                         setAuth(false);
                         socket.close();
                         nick = "";
+                        textArea.clear();
                         fileChatWriter.close();
                     } catch (IOException e) {
                         e.printStackTrace();
